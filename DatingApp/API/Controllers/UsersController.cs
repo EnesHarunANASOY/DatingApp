@@ -18,7 +18,6 @@ public class UsersController : BaseApiController
     public async Task<ActionResult<IEnumerable<AppUser>>> GetUsers()
     {
         List<AppUser> users = await _context.Users.ToListAsync();
-
         return users;
     }
 

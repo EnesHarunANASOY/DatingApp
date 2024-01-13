@@ -16,7 +16,7 @@ export class AccountService {
 
   login(model : any)
   {
-    console.log("Before Loging: ", model);
+    //console.log("Before Loging: ", model);
     return this.http.post<User>(this.baseUrl + 'account/login', model).pipe(
       map((response: User)=>{
         const user = response;

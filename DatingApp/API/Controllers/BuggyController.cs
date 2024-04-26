@@ -26,8 +26,6 @@ public class BuggyController : BaseApiController
         if(thing==null) return NotFound();
 
         return thing;
-
-
     }
      [HttpGet("server-error")]
     public ActionResult<string> GetServerError()
